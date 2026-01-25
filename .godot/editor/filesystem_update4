@@ -1,0 +1,4 @@
+res://scripts/player.gd
+res://scenes/sample_game.tscn
+res://assets/MinimalUI/MinimalUI.tres
+res://scenes/main_menu.tscn
