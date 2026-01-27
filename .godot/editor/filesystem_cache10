@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1769443631
+::res://::1769527882
 export_presets.cfg::TextFile::-1::1769232848::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::3236757648062994094::1769232848::1769312704::1::::<><><>0<>0<>28a62ec16ad7f372858c4ee750214e20<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile::-1::1769232848::0::1::::<><><>0<>0<><>::
@@ -12,17 +12,17 @@ sprite_frames.tres::SpriteFrames::1603277661168395633::1769232848::0::1::::<><><
 ::res://assets/audio/::1769312701
 Ludum Dare 30 - 07.ogg::AudioStreamOggVorbis::1936042567279824709::1769232848::1769312701::1::::<><><>0<>0<>4403a9be6ec921c6bb9341c6e9f80fa9<>res://.godot/imported/Ludum Dare 30 - 07.ogg-751d673aaa84a63d35e6b23c205834a0.oggvorbisstr::
 Modern10.wav::AudioStreamWAV::4994893660847681269::1769232848::1769312701::1::::<><><>0<>0<>888badb55b327491161d8465f97444b3<>res://.godot/imported/Modern10.wav-3fadb7514fb908e2ffc8724873efc707.sample::
-::res://assets/MinimalUI/::1769316691
+::res://assets/MinimalUI/::1769443728
 icons.svg::CompressedTexture2D::64930229923229138::1769232848::1769312700::1::::<><><>0<>0<>13dcddd324807bb40144ae1dbe764e99<>res://.godot/imported/icons.svg-7a8754722196439d77cd27c4f3da15e9.ctex::
-MinimalUI.tres::Theme::4899951370263207523::1769316691::0::1::::<><><>0<>0<><>::uid://dsisvfrdgqau::::res://assets/Cubic_11_1.013_R.ttf<>uid://6pnkpupuhda::::res://assets/MinimalUI/icons.svg
+MinimalUI.tres::Theme::4899951370263207523::1769443728::0::1::::<><><>0<>0<><>::uid://dsisvfrdgqau::::res://assets/Cubic_11_1.013_R.ttf<>uid://6pnkpupuhda::::res://assets/MinimalUI/icons.svg
 OpenSans-Regular.ttf::FontFile::4774797576049049944::1769232848::1769312704::1::::<><><>0<>0<>7c2aae716d48c5f912d7c307e7a380bc<>res://.godot/imported/OpenSans-Regular.ttf-5a64d9b3361aa4314afd0fa0a5f49455.fontdata::
 ::res://recordings/::1769317172
-::res://scenes/::1769317376
+::res://scenes/::1769443728
 action_button.tscn::PackedScene::1533738607834668421::1769232848::0::1::::<><><>0<>0<><>::res://scripts/action_button.gd<>uid://cb2tqos08yhkd::::res://assets/MinimalUI/MinimalUI.tres
 audio_manager.tscn::PackedScene::2200825821883592246::1769232848::0::1::::<><><>0<>0<><>::res://scripts/audio_manager.gd<>uid://2t3lq8staurd::::res://assets/audio/Ludum Dare 30 - 07.ogg<>uid://cdftf0f0a87pp::::res://assets/audio/Modern10.wav
 main_menu.tscn::PackedScene::7359505291010399504::1769317376::0::1::::<><><>0<>0<><>::uid://cb2tqos08yhkd::::res://assets/MinimalUI/MinimalUI.tres<>uid://dcx2sayl1bt0m::::res://scripts/main_menu.gd<>uid://bhscd0cvpkonp::::res://assets/glitch.ogv<>uid://603k3vy4p3f1::::res://scenes/settings.tscn
 my_character.tscn::PackedScene::2125966685409528620::1769232848::0::1::::<><><>0<>0<><>::
-sample_game.tscn::PackedScene::5746271475016446372::1769317372::0::1::::<><><>0<>0<><>::uid://lvk4rnyxn6fs::::res://scripts/player.gd<>uid://531yx51pquoc::::res://scripts/sample_game.gd<>uid://cb2tqos08yhkd::::res://assets/MinimalUI/MinimalUI.tres<>uid://dwowajunqagb0::::res://assets/character-spritesheet.png<>uid://603k3vy4p3f1::::res://scenes/settings.tscn
+sample_game.tscn::PackedScene::5746271475016446372::1769443728::0::1::::<><><>0<>0<><>::uid://lvk4rnyxn6fs::::res://scripts/player.gd<>uid://531yx51pquoc::::res://scripts/sample_game.gd<>uid://cb2tqos08yhkd::::res://assets/MinimalUI/MinimalUI.tres<>uid://dwowajunqagb0::::res://assets/character-spritesheet.png<>uid://603k3vy4p3f1::::res://scenes/settings.tscn
 settings.tscn::PackedScene::2229183034591531068::1769232848::0::1::::<><><>0<>0<><>::uid://cb2tqos08yhkd::::res://assets/MinimalUI/MinimalUI.tres<>res://scripts/settings.gd<>res://scripts/video.gd<>res://scripts/audio.gd<>uid://v37pld2ul4n6::::res://scenes/action_button.tscn
 utilities.tscn::PackedScene::1683088440184320235::1769232848::0::1::::<><><>0<>0<><>::res://scripts/Utilities.gd<>uid://dc388hkklqvvc::::res://scenes/main_menu.tscn<>uid://cn4sis57vp3si::::res://scenes/sample_game.tscn
 ::res://scripts/::1769317078

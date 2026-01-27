@@ -1,2 +1,3 @@
-res://scenes/sample_game.tscn
+res://scripts/main_menu.gd
+res://scenes/main_game.tscn
 res://assets/MinimalUI/MinimalUI.tres
