@@ -601,6 +601,7 @@ color = Color(0, 0, 0, 1)
 
 [node name="Player" type="CharacterBody2D" parent="."]
 position = Vector2(576, 320)
+scale = Vector2(2, 2)
 motion_mode = 1
 script = ExtResource("1_clim0")
 
