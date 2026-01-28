@@ -2,7 +2,7 @@ extends Node
 
 # Scene manager
 @export var scenes: Array[PackedScene] = []
-@export var scene_map: Dictionary = {}
+@export var scene_map: Dictionary[StringName, PackedScene]
 @export var is_persistence: bool = false
 
 const PATH = "user://settings.cfg"
@@ -54,7 +54,11 @@ func load_video_settings():
 
 # Scene manager
 func switch_scene(scene_name: StringName, cur_scene: Node):
-	var scene = scenes[scene_map[scene_name]].instantiate()
+	if not scene_map.has(scene_name):
+		push_error("Scene not found: %s" % scene_name)
+		return
+
+	var scene = scene_map[scene_name].instantiate()
 	get_tree().root.add_child(scene)
 	cur_scene.queue_free()
 
