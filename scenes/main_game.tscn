@@ -593,10 +593,10 @@ animations = [{
 script = ExtResource("1_ipu61")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1725265038]
-offset_left = -192.0
-offset_top = -200.0
-offset_right = 1408.0
-offset_bottom = 896.0
+offset_right = 1152.0
+offset_bottom = 648.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
 color = Color(0, 0, 0, 1)
 
 [node name="Player" type="CharacterBody2D" parent="." unique_id=801883188]

@@ -1,10 +1,13 @@
-res://assets/MinimalUI/MinimalUI.tres::1a078765d39ed1e255e205f674be576d::1769638428::res://.godot/exported/133200997/export-63bf9aff15507bef82b809d287ddfe0c-MinimalUI.res
+res://assets/MinimalUI/MinimalUI.tres::1a078765d39ed1e255e205f674be576d::1769723827::res://.godot/exported/133200997/export-63bf9aff15507bef82b809d287ddfe0c-MinimalUI.res
 res://assets/default_bus_layout.tres::03bd267dbf63aff7a78662d03fd45c68::1769232848::res://.godot/exported/133200997/export-d01cc4ddf1d732095fecfb44d2dc8d65-default_bus_layout.res
 res://assets/sprite_frames.tres::a1f9498c6b002c27b0aaa6c98be6e810::1769232848::res://.godot/exported/133200997/export-6fd04f36dfcf937ecbb06a2b2927f3c4-sprite_frames.res
 res://scenes/action_button.tscn::ea7465847f725ee462df48d2edf930f2::1769232848::res://.godot/exported/133200997/export-9729b5baee0bbd8b7e327ff48a46964e-action_button.scn
 res://scenes/audio_manager.tscn::0dc5658bd7230507c6757dee04c5a21d::1769232848::res://.godot/exported/133200997/export-f9a873655189730b04b7720acae5dfd9-audio_manager.scn
-res://scenes/main_game.tscn::17dff793aa6ce77ca07a4547a6227553::1769528029::res://.godot/exported/133200997/export-3a689a07f84009fde038ac878f1ae44a-main_game.scn
+res://scenes/main_game.tscn::8e15281c6600a52cc57d764ac1e63e16::1769723965::res://.godot/exported/133200997/export-3a689a07f84009fde038ac878f1ae44a-main_game.scn
 res://scenes/main_menu.tscn::1201492e1eb34aa76de0d976ab7906a4::1769317376::res://.godot/exported/133200997/export-ea5c6ad4629af728dc514cefde332394-main_menu.scn
 res://scenes/my_character.tscn::7d6832fb1c0b03e7b12f33128d3e2640::1769232848::res://.godot/exported/133200997/export-2ff7fe54c1aa02267f23815df41f99db-my_character.scn
 res://scenes/settings.tscn::87eb3f49bd67c2f90f69958bf1b4da8c::1769232848::res://.godot/exported/133200997/export-7416c78d345eded4b396246a6c8adbe0-settings.scn
 res://scenes/utilities.tscn::ca29fefc9eb2b205d34b58321fc42a65::1769638428::res://.godot/exported/133200997/export-0d8736326459db587c392d4cb9ba63ac-utilities.scn
+res://addons/godot_super-wakatime/api_key_prompt.tscn::a6988a5ba43d5aa92a08f216c1db28db::1769703092::res://.godot/exported/133200997/export-cd8705cb5e2533bd79c64579ac674dae-api_key_prompt.scn
+res://addons/godot_super-wakatime/counter.tscn::7f13ad35960e259f6de719f9785ce249::1769703093::res://.godot/exported/133200997/export-4af6c9115c1c285af5925fa1ce6a526e-counter.scn
+res://Test.tscn::d040d22518af14a0a1175a74dbac547e::1769703100::res://.godot/exported/133200997/export-424cafac01f45de89b53d7dc0c0edabc-Test.scn
