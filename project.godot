@@ -38,6 +38,10 @@ movie_writer/movie_file="recordings"
 movie_writer/disable_vsync=true
 movie_writer/fps=10
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
+
 [input]
 
 Up={

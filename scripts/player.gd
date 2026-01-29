@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
-const WALK_SPEED := 60.0
-const RUN_SPEED := 150.0
+const WALK_SPEED := 100.0
+const RUN_SPEED := 200.0
 
 @onready var screen_size = get_viewport_rect().size
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
