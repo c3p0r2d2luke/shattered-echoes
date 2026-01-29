@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cn4sis57vp3si"]
 
 [ext_resource type="Script" uid="uid://531yx51pquoc" path="res://scripts/sample_game.gd" id="1_ipu61"]
+[ext_resource type="Texture2D" uid="uid://dcw41crek1sd5" path="res://assets/download.jpeg" id="2_wi4c7"]
 [ext_resource type="Script" uid="uid://lvk4rnyxn6fs" path="res://scripts/player.gd" id="2_ygxny"]
 [ext_resource type="Texture2D" uid="uid://dwowajunqagb0" path="res://assets/character-spritesheet.png" id="3_wi4c7"]
 [ext_resource type="Theme" uid="uid://cb2tqos08yhkd" path="res://assets/MinimalUI/MinimalUI.tres" id="4_70vka"]
@@ -592,12 +593,17 @@ animations = [{
 [node name="SampleGame" type="Node2D" unique_id=1647394276]
 script = ExtResource("1_ipu61")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1725265038]
-offset_right = 1152.0
-offset_bottom = 648.0
-size_flags_horizontal = 4
-size_flags_vertical = 4
-color = Color(0, 0, 0, 1)
+[node name="Background" type="CanvasLayer" parent="." unique_id=1561473395]
+
+[node name="TextureRect" type="TextureRect" parent="Background" unique_id=1394355311]
+z_index = -100
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_wi4c7")
+stretch_mode = 6
 
 [node name="Player" type="CharacterBody2D" parent="." unique_id=801883188]
 position = Vector2(576, 320)
@@ -615,9 +621,9 @@ animation = &"run_right"
 frame_progress = 0.7609059
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=486729547]
-visible = false
 
 [node name="Panel" type="Panel" parent="CanvasLayer" unique_id=379349022]
+visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -668,7 +674,6 @@ text = "Main Menu
 "
 
 [node name="Settings" parent="CanvasLayer/Panel" unique_id=1998053536 node_paths=PackedStringArray("pre_scene") instance=ExtResource("5_2l77h")]
-visible = false
 layout_mode = 1
 current_tab = 0
 pre_scene = NodePath("../../..")
