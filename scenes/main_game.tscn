@@ -594,9 +594,11 @@ animations = [{
 script = ExtResource("1_ipu61")
 
 [node name="Background" type="CanvasLayer" parent="." unique_id=1561473395]
+layer = -1
 
 [node name="TextureRect" type="TextureRect" parent="Background" unique_id=1394355311]
 z_index = -100
+z_as_relative = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -606,6 +608,8 @@ texture = ExtResource("2_wi4c7")
 stretch_mode = 6
 
 [node name="Player" type="CharacterBody2D" parent="." unique_id=801883188]
+z_index = 4096
+z_as_relative = false
 position = Vector2(576, 320)
 scale = Vector2(2, 2)
 motion_mode = 1
