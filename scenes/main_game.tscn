@@ -1,15 +1,70 @@
 [gd_scene format=3 uid="uid://cn4sis57vp3si"]
 
 [ext_resource type="Script" uid="uid://531yx51pquoc" path="res://scripts/sample_game.gd" id="1_ipu61"]
-[ext_resource type="Texture2D" uid="uid://dcw41crek1sd5" path="res://assets/download.jpeg" id="2_wi4c7"]
+[ext_resource type="Texture2D" uid="uid://cyihiv4lio0m0" path="res://assets/maze2.webp" id="2_wi4c7"]
 [ext_resource type="Script" uid="uid://lvk4rnyxn6fs" path="res://scripts/player.gd" id="2_ygxny"]
+[ext_resource type="Script" uid="uid://db7loyq7jnlaa" path="res://scripts/death_sensor.gd" id="3_70vka"]
 [ext_resource type="Texture2D" uid="uid://dwowajunqagb0" path="res://assets/character-spritesheet.png" id="3_wi4c7"]
+[ext_resource type="Texture2D" uid="uid://bvl85bjxgjskc" path="res://assets/shark4.png" id="4_5cypo"]
 [ext_resource type="Theme" uid="uid://cb2tqos08yhkd" path="res://assets/MinimalUI/MinimalUI.tres" id="4_70vka"]
 [ext_resource type="PackedScene" uid="uid://603k3vy4p3f1" path="res://scenes/settings.tscn" id="5_2l77h"]
+[ext_resource type="Texture2D" uid="uid://mhai467gutxc" path="res://assets/shark1.png" id="5_o6v7o"]
+[ext_resource type="Texture2D" uid="uid://de2bej1cjfo3w" path="res://assets/shark2.png" id="6_wjob3"]
+[ext_resource type="Texture2D" uid="uid://d2cokcdfwsxou" path="res://assets/shark3.png" id="7_8xp80"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sp04v"]
+atlas = ExtResource("4_5cypo")
+region = Rect2(0, 0, 311, 196)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ihbck"]
+atlas = ExtResource("4_5cypo")
+region = Rect2(311, 0, 311, 196)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vnsdt"]
+atlas = ExtResource("5_o6v7o")
+region = Rect2(286, 0, 267, 289)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ikqpi"]
+atlas = ExtResource("6_wjob3")
+region = Rect2(302, 0, 302, 273)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5luka"]
+atlas = ExtResource("7_8xp80")
+region = Rect2(300, 0, 300, 276)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yu8cv"]
+atlas = ExtResource("7_8xp80")
+region = Rect2(0, 0, 300, 276)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ibnub"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sp04v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ihbck")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vnsdt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ikqpi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5luka")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yu8cv")
+}],
+"loop": true,
+"name": &"eat",
+"speed": 8.0
+}]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wtexr"]
-radius = 12.0
-height = 54.0
+radius = 5.5
+height = 19.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_syodk"]
 atlas = ExtResource("3_wi4c7")
@@ -607,10 +662,39 @@ grow_vertical = 2
 texture = ExtResource("2_wi4c7")
 stretch_mode = 6
 
+[node name="StaticBody2D" type="StaticBody2D" parent="Background" unique_id=1546755876]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Background/StaticBody2D" unique_id=1768692962]
+position = Vector2(284, 10)
+polygon = PackedVector2Array(-11, -11, -11, 577, 8, 577, 9, 233, 200, 233, 200, 51, 49, 51, 50, 181, 149, 181, 150, 102, 99, 101, 100, 111, 139, 112, 139, 171, 61, 172, 59, 62, 191, 62, 190, 223, 8, 223, 9, 10, 608, 11, 608, 39, 366, 40, 365, 465, 345, 465, 344, 251, 253, 252, 253, 52, 242, 51, 242, 263, 334, 264, 334, 484, 375, 485, 376, 51, 637, 51, 637, -10)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Background/StaticBody2D" unique_id=2067429676]
+position = Vector2(907, 634)
+scale = Vector2(1.36, 1.3600049)
+polygon = PackedVector2Array(10.294128, 10.294067, -465.44116, 10.294067, -465.44116, -3.6764526, -280.88232, -4.411743, -280.14703, -205.14633, -347.7941, -205.88162, -347.0588, -227.20508, -384.5588, -227.20508, -384.5588, -64.70566, -318.38232, -63.970367, -317.64703, -167.64645, -347.0588, -167.64645, -347.0588, -94.11731, -355.14703, -94.11731, -354.41174, -176.46997, -311.0294, -176.46997, -310.2941, -57.352753, -391.91174, -57.352753, -391.91174, -236.02856, -340.44116, -235.29327, -340.44116, -213.23453, -273.5294, -213.23453, -272.0588, -49.999817, -55.882324, -49.264526, -55.882324, -41.91162, -272.0588, -41.17633, -272.0588, -5.882324, -11.764709, -4.411743, -11.029419, -369.11633, -40.441162, -369.11633, -40.441162, -138.9701, -121.32355, -138.2348, -122.05884, -116.91135, -56.617615, -116.176056, -55.882324, -101.470215, -130.14703, -101.470215, -130.14703, -377.20453, -115.44116, -377.20453, -114.70587, -147.05829, -48.52942, -146.323, -48.52942, -368.38104, -77.20587, -368.38104, -77.94116, -169.85233, -83.82355, -168.38174, -85.29413, -377.20453, 10.294128, -376.46924, 11.029419, -83.08795)
+
+[node name="Box4" type="CollisionPolygon2D" parent="Background/StaticBody2D" unique_id=1158151137]
+position = Vector2(608, 161)
+rotation = 1.5703629
+polygon = PackedVector2Array(-10, -11, 42, -10, 42, 41, -10, 41)
+
+[node name="DeathSensor" type="Area2D" parent="Background" unique_id=1687082096]
+disable_mode = 1
+script = ExtResource("3_70vka")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Background/DeathSensor" unique_id=1527249501]
+position = Vector2(911, 71)
+polygon = PackedVector2Array(-11, -10, -11, 51, 10, 51, 10, -10)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Background/DeathSensor" unique_id=1761954719]
+position = Vector2(918, 90.99999)
+scale = Vector2(0.275, 0.275)
+sprite_frames = SubResource("SpriteFrames_ibnub")
+animation = &"eat"
+
 [node name="Player" type="CharacterBody2D" parent="." unique_id=801883188]
-z_index = 4096
 z_as_relative = false
-position = Vector2(576, 320)
+position = Vector2(238, 603)
 scale = Vector2(2, 2)
 motion_mode = 1
 script = ExtResource("2_ygxny")
@@ -619,10 +703,10 @@ script = ExtResource("2_ygxny")
 shape = SubResource("CapsuleShape2D_wtexr")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player" unique_id=205644517]
-position = Vector2(1, -6)
+position = Vector2(-1.335144e-05, -2.5)
+scale = Vector2(0.4, 0.4)
 sprite_frames = SubResource("SpriteFrames_8cknl")
-animation = &"run_right"
-frame_progress = 0.7609059
+animation = &"idle_down"
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=486729547]
 
